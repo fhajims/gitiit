@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Slideshow (Step-10a)</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+
+    <string name="hello_first_fragment">Slideshow</string>
+    <string name="default_image_text">Sunset at the beach</string>
+
+    <string name="info_button_text">The helpful info button</string>
+</resources>

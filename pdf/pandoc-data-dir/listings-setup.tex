@@ -1,0 +1,58 @@
+%
+% color coding for swift 
+%
+% https://gist.github.com/chriseidhof/18dbc1c4eef919eab2c7
+%
+\definecolor{Light}{HTML}{F4F4F4}
+\definecolor{keyword}{HTML}{BA2CA3}
+\definecolor{string}{HTML}{D12F1B}
+\definecolor{comment}{HTML}{008400}
+
+
+\usepackage{xpatch,realboxes}
+\usepackage{xcolor}
+
+
+\lstdefinelanguage{kotlin}{
+  comment=[l]{//},
+  commentstyle={\color{gray}\ttfamily},
+  emph={filter, first, firstOrNull, forEach, lazy, map, mapNotNull, println},
+  emphstyle={\color{OrangeRed}},
+  identifierstyle=\color{black},
+  keywords={!in, !is, abstract, actual, annotation, as, as?, async, break, by, catch, cancel, class, companion, const, constructor, continue, crossinline, data, delegate, do, dynamic, else, enum, expect, external, false, field, file, final, finally, for, fun, get, if, import, in, infix, init, inline, inner, interface, internal, is, join, lateinit, launch, noinline, null, object, open, operator, out, override, package, param, private, property, protected, public, receiveris, reified, return, return@, sealed, set, setparam, super, suspend, tailrec, this, throw, true, try, typealias, typeof, val, var, vararg, when, where, while},
+  keywordstyle={\color{NavyBlue}\bfseries},
+  morecomment=[s]{/*}{*/},
+  morestring=[b]",
+  morestring=[s]{"""*}{*"""},
+  ndkeywords={GlobalScope, CoroutineScope, Dispatchers, @Composable, @Entity, @Dao, @Database, @Query, @PrimaryKey, @ColumnInfo, @Deprecated, @JvmField, @JvmName, @JvmOverloads, @JvmStatic, @JvmSynthetic, Array, Byte, Double, Float, Int, Integer, Iterable, Long, Runnable, Short, String, Any, Unit, Nothing},
+  ndkeywordstyle={\color{BurntOrange}\bfseries},
+  sensitive=true,
+  stringstyle={\color{ForestGreen}\ttfamily},
+}
+
+\lstset{
+  language=kotlin,
+   extendedchars=\true,
+   basicstyle=\ttfamily\small,
+   showstringspaces=false, % lets spaces in strings appear as real spaces
+   columns=fixed,
+   keepspaces=true,
+   keywordstyle=\color{keyword},
+   stringstyle=\color{string},
+   commentstyle=\color{comment},
+   backgroundcolor=\color[RGB]{228,228,228},
+   tabsize=2,
+   frame=trbl,
+   frameround=tttt,
+   framesep=7pt,
+   breaklines=true,
+   postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}}
+ % numberstyle=\tiny\ttfamily, % ERROR in PDF: numberstyle//numberstyle numberstyle numberstylePreViewnumberstyle.numberstyleswift
+ % explpreset={},       % ERROR: ! Package xkeyval Error: `explpreset' undefined in families `lst'. 
+ % inputencoding=utf8x, % ERROR: ! Package utf8x Error: Pleaseuse\usepackage{ucs}tosupportencodingutf8x.
+}
+
+
+\makeatletter
+\xpretocmd\lstinline{\Colorbox{Light}\bgroup\appto\lst@DeInit{\egroup}}{}{}
+\makeatother

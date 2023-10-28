@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Slideshow (Step-05d)</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+
+    <string name="hello_first_fragment">Slideshow</string>
+    <string name="default_image_text">Sunset at the beach</string>
+
+
+
+
+    <string name="info_button">The helpful info button</string>
+    <string name="input_number_as_text_hint">7</string>
+    <string name="input_number_as_text">5</string>
+    <string name="countdown_text_view_text">◎◎◎</string>
+
+    <string name="timeout_button_text">Tap slide…</string>
+    <string name="timeout_button_text_done">Dome</string>
+    <string name="pause_autofill_hint">3s</string>
+</resources>

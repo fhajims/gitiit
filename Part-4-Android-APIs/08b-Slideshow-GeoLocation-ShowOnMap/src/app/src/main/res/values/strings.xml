@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Slideshow (Step-08b)</string>
+
+    <string name="first_fragment_label">First Fragment</string>
+
+    <string name="hello_first_fragment">Slideshow</string>
+    <string name="default_image_text">Sunset at the beach</string>
+
+    <string name="info_button_text">The helpful info button</string>
+    <string name="distance_in_km">0 km</string>
+    <string name="distance_to_image_hint">Distance from current location to the place the image was taken</string>
+</resources>

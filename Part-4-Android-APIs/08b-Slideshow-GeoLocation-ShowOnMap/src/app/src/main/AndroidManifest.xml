@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="at.fhj.omd.android.slideshow08b">
+
+    <!-- For location:
+
+        uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /
+
+    -->
+
+    <!--
+
+        For OSM (Open Street Map)
+
+        (see also build.gradle)
+
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"  />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+
+    <!-- for security reasons, we do not allow to backup all the app data -->
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Slideshow">
+
+        <activity
+            android:name="at.fhj.omd.android.slideshow08b.ui.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Slideshow.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- only EXPLICIT intents (see code in MainActivity) are ok nowadays
+
+         Exceptions:
+         https://developer.android.com/guide/components/broadcast-exceptions
+                   ...API level 26) Background Execution Limits, apps that target the
+                   API level 26 or higher can no longer register broadcast receivers for
+                   implicit broadcasts in their manifest....
+         -->
+
+    </application>
+</manifest>

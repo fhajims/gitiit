@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Slideshow (Step-04)</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">About</string>
+    <string name="hello_first_fragment">Slideshow</string>
+    <string name="default_image_text">Sunset at the beach</string>
+    <string name="about_title">About</string>
+    <string name="back_to_slideshow">Back to Slideshow…</string>
+    <string name="mail_button_contentDescription">Currently just used as info button</string>
+</resources>

@@ -1,0 +1,31 @@
+# find all options in: https://pandoc.org/MANUAL.html#option--defaults 
+from: markdown
+to: pdf
+table-of-contents: true
+toc-depth: 2
+standalone: true
+self-contained: true
+title-prefix: 'Droid-Devel'
+variables:
+ urlcolor: Blue
+# documentclass: memoir
+#documentclass: article
+ documentclass: book
+ classoption:
+  - oneside
+#  - twosides
+#  - draft
+#  - portrait
+ keywords: [mobile,development]
+ language: de
+# cover-image: pandoc-data-dir/cover.png
+# titlepage-background: pandoc-data-dir/cover.png
+# prepend-titlepage: pandoc-data-dir/cover.png
+# papersize: a4paper
+# geometry: a4paper
+# geometry: margin=2cm
+# fontsize: 12pt
+# mainfont: Arial.ttf 
+ colorlinks: true
+# linkcolor: Black
+ listings: true
